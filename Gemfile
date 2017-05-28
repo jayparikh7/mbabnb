@@ -5,12 +5,20 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Only add these gems in a devleopment environment
+# Only add these gems in a development environment
 group :development do
   gem "annotate"
   gem "better_errors"
   gem "starter_generators", :git => 'git://github.com/raghubetina/starter_generators.git'
 end
+
+group :development do
+  gem "annotate"
+  gem “better_errors”
+  gem “starter_generators”, :git => 'git://github.com/raghubetina/starter_generators.git'
+end
+
+gem “devise”
 
 gem "devise"
 
